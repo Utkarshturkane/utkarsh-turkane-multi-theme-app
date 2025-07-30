@@ -13,9 +13,9 @@ function App() {
         <Header />
         <main className="pt-20 px-4">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="https://utkarshturkane.github.io/utkarsh-turkane-multi-theme-app/" element={<Home />} />
+            <Route path="https://utkarshturkane.github.io/utkarsh-turkane-multi-theme-app/about" element={<About />} />
+            <Route path="https://utkarshturkane.github.io/utkarsh-turkane-multi-theme-app/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
