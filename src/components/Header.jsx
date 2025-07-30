@@ -10,13 +10,13 @@ function Header() {
 
       {/* Navigation Links */}
       <nav className="flex gap-4 text-sm font-medium">
-        <Link to="https://utkarshturkane.github.io/utkarsh-turkane-multi-theme-app/" className="hover:text-blue-600 transition">
+        <Link to="/" className="hover:text-blue-600 transition">
           Home
         </Link>
-        <Link to="https://utkarshturkane.github.io/utkarsh-turkane-multi-theme-app/about" className="hover:text-blue-600 transition">
+        <Link to="/about" className="hover:text-blue-600 transition">
           About
         </Link>
-        <Link to="https://utkarshturkane.github.io/utkarsh-turkane-multi-theme-app/contact" className="hover:text-blue-600 transition">
+        <Link to="/contact" className="hover:text-blue-600 transition">
           Contact
         </Link>
       </nav>
