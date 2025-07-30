@@ -1,0 +1,47 @@
+ @import "tailwindcss";
+
+
+ /* Add theme-specific classes in global css */
+ .theme1 {
+   --bg: #ffffff;
+   --text: #000000;
+   font-family: 'Inter', sans-serif;
+ }
+
+ .theme2 {
+   --bg: #121212;
+   --text: black;
+   font-family: 'Georgia', serif;
+ }
+
+ .theme2 h1 {
+   color: #ffffff;
+ }
+
+ .theme2 p.leading-relaxed {
+   color: #b0b0b0;
+ }
+
+ .theme2 .contact-paragraph {
+   color: #b0b0b0;
+ }
+
+ .theme2 .footer-text {
+   color: #b0b0b0;
+ }
+
+ .theme2 footer {
+   color: #ffffff !important;
+ }
+
+ .theme3 {
+   --bg: #fef6e4;
+   --text: #001858;
+   font-family: 'Pacifico', cursive;
+ }
+
+ body {
+   background-color: var(--bg);
+   color: var(--text);
+   transition: all 0.3s ease;
+ }
