@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext();
 
@@ -15,11 +15,14 @@ export const ThemeProvider = ({ children }) => {
     document.documentElement.className = theme;
   }, [theme]);
 
+   const valueToShare = { theme, changeTheme };
+
   return (
-    <ThemeContext.Provider value={{ theme, changeTheme }}>
+    <ThemeContext.Provider value={valueToShare}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export default ThemeContext;
+ 

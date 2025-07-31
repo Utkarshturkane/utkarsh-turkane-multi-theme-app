@@ -1,12 +1,16 @@
-import { useTheme } from "../context/ThemeContext";
+
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 function Header() {
-  const { theme, changeTheme } = useTheme();
+ 
+
+  const { theme, changeTheme } = useContext(ThemeContext);
 
   return (
     <header className="fixed top-0 w-full flex flex-col md:flex-row justify-between items-center px-4 py-3 shadow-md z-50 bg-white dark:bg-gray-900 gap-2 md:gap-0">
-      <div className="text-xl font-bold">  My Themed App</div>
+      <div className="text-xl font-bold"> My Themed App</div>
 
       {/* Navigation Links */}
       <nav className="flex gap-4 text-sm font-medium">
